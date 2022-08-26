@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul, li{
+  list-style: none;
+}
+a{
+  color: initial;
+  text-decoration: none;
+}
+div .show{
+  display: block;
+}
+#sidebar.show{
+  display: block;
+}
+.gadget-card .add-to-cart{
+  background-color: #FFE9D6;
+}

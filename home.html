@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Tombra" />
+    <meta description="Ustacky frontend project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Ustacky E-Commerce</title>
+
+    <link href="./assets/images/favicon_ems_48.ico" rel="shortcut icon" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/landing.css" rel="stylesheet" />
+    <link href="./css/cart.css" rel="stylesheet" />
+    <link href="./css/summary.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="cart-modal">
+      <div id="cart">
+        <div class="cart-bills">
+          <table>
+            <thead>
+              <tr>
+                <th>S/N</th>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="cart-form">
+          <form>
+            <div class="input">
+              <span></span>
+            </div>
+            <div class="input">
+              <input id="name" type="text" placeholder="Your Name" />
+              <span></span>
+            </div>
+            <div class="input">
+              <input id="email" type="email" placeholder="Your Email" />
+              <span></span>
+            </div>
+            <div class="input">
+              <input id="phone" type="tel" placeholder="Your Phone Number" />
+              <span></span>
+            </div>
+            <div class="cart-footer">
+              <div class="cart-amount">
+                <p>Total Amount to be Paid</p>
+                <p>&#8358;<span class="cart-total"></span></p>
+              </div>
+              <div class="cart-buttons">
+                <button id="cont-shop" type="button">Continue Shopping</button>
+                <button id="checkout" type="submit">Checkout</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="nav-div">
+      <nav>
+        <div>
+          <img src="./assets/images/EMS.svg" alt="Logo image" />
+        </div>
+        <div class="menu open-close-button">
+          <div class="hor col-b"></div>
+          <div class="hor col-b"></div>
+          <div class="hor col-b"></div>
+        </div>
+        <ul id="sidebar" class="nav-links">
+          <div class="menu-div">
+            <div class="menu open-close-button">
+              <div class="hor col-w"></div>
+              <div class="hor col-w"></div>
+            </div>
+            <img src="./assets/images/EMS.svg" alt="Logo" />
+          </div>
+          <li>
+            <a href="#intro">Intro</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#shop">Shop</a>
+          </li>
+        </ul>
+        <div id="open-cart-modal" class="cart-link">
+          <img class="cart-i" src="./assets/images/cart.svg" alt="Cart Image" />
+          <span id="cart-number" class="cart-i">0</span>
+        </div>
+      </nav>
+    </div>
+    <div class="intro-section">
+      <div id="intro" class="container">
+        <div>
+          <div class="text-display-logo">
+            <div class="display-text"><h1>THE E-MILLENIAL STORE</h1></div>
+            <div class="display-text-img"></div>
+          </div>
+          <p class="shop-area">
+            <a href="#shop"><span>SHOP NOW</span></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="about-section">
+      <p>E-Millenial Store is an hypothetical online store for gadgets we believe every <br />
+      'Millenial' or 'Gen-Z' should have today. We've got mobile phones, laptops, <br />
+      smartwatches and other gadgets. Explore all our gadgetsa and choose the ones <br />
+      that suit you.
+      </p>
+    </div>
+
+    <section id="shop">
+      <h2>OUR GADGETS</h2>
+      <div class="gadget-cards">
+        <div class="gadget-card">
+          <div>
+            <img src="./assets/images/product1.png" src="Gagdets here" />
+            <div class="gadget-mask">
+              <h2>Price</h2>
+              <p></p>
+            </div>
+          </div>
+          <h2>SAMSUNG TV</h2>
+          <span class="add-cart">ADD TO CART</span>
+        </div>
+        <div class="gadget-card">
+          <div>
+            <img src="./assets/images/product2.png" src="Gagdets here" />
+            <div class="gadget-mask">
+              <h2>Price</h2>
+              <p></p>
+            </div>
+          </div>
+          <h2>PIXEL 4a</h2>
+          <span class="add-cart">ADD TO CART</span>
+        </div>
+        <div class="gadget-card">
+          <div>
+            <img src="./assets/images/product3.png" src="Gagdets here" />
+            <div class="gadget-mask">
+              <h2>Price</h2>
+              <p></p>
+            </div>
+          </div>
+          <h2>PS 5</h2>
+          <span class="add-cart">ADD TO CART</span>
+        </div>
+        <div class="gadget-card">
+          <div>
+            <img src="./assets/images/product4.png" src="Gagdets here" />
+            <div class="gadget-mask">
+              <h2>Price</h2>
+              <p></p>
+            </div>
+          </div>
+          <h2>MACBOOK AIR</h2>
+          <span class="add-cart">ADD TO CART</span>
+        </div>
+        <div class="gadget-card">
+          <div>
+            <img src="./assets/images/product5.png" src="Gagdets here" />
+            <div class="gadget-mask">
+              <h2>Price</h2>
+              <p></p>
+            </div>
+          </div>
+          <h2>APPLE WATCH</h2>
+          <span class="add-cart">ADD TO CART</span>
+        </div>
+        <div class="gadget-card">
+          <div>
+            <img src="./assets/images/product6.png" src="Gagdets here" />
+            <div class="gadget-mask">
+              <h2>Price</h2>
+              <p></p>
+            </div>
+          </div>
+          <h2>AIR PODS</h2>
+          <span class="add-cart">ADD TO CART</span>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <img src="./assets/images/EMS.svg" alt="Logo here" />
+        <p>Designed and Crafted by a Frontend Ninga </p>
+      </div>
+    </footer>
+
+    <!-- Javascripts here-->
+    <script src="./js/menu.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/cartform.js"></script>
+    <!-- <script src="/js/loader.js"></script> -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+  </body>
+</html>

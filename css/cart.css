@@ -1,0 +1,118 @@
+#cart-modal{
+  display: none;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#cart-modal.show{
+  display: block;
+}
+#cart{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  min-width: 300px;
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 1rem;
+  z-index: 1;
+  background-color: white;
+}
+#cart-modal::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.6);
+}
+.cart-bills table{
+  width: 100%;
+}
+.cart-bills table th{
+  text-align: start;
+}
+.cart-bills table td{
+  padding: 0.8rem 0;
+  text-align: start;
+}
+.cart-qty{
+  text-align: center;
+}
+.cart-qty span{
+  padding: 2px 0.8rem;
+  background-color: #FF9A3D;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cart-qty span:first-child{
+  margin-right: 5px;
+}
+.cart-qty span:last-child{
+  margin-left: 5px;
+}
+.cart-bills table .cart-remove{
+  padding: 2px 5px;
+  background-color: #FFCD9E;
+  border-radius: 4px;
+  text-align: center;
+  font-size: large;
+  cursor: pointer;
+}
+.cart-form form > div.input{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 1rem auto;
+}
+.cart-form input{
+  height: 2rem;
+  padding: 0.2rem;
+  background-color: #FFE9D6;
+  margin-bottom: 0.4rem;
+}
+.cart-form form > div.input span{
+  color: red;
+}
+.cart-footer{
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.cart-amount > p{
+  margin-top: 1rem;
+}
+.cart-buttons > button{
+  display: inline-block;
+  width: 33.3%;
+  max-width: 10rem;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.cart-buttons > button:first-child{
+  background-color: #FFE9D6;
+}
+.cart-buttons > button:last-child{
+  margin-left: 10px;
+  background-color: #FF9A3D;
+  color: white;
+}
+.cart-buttons{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
